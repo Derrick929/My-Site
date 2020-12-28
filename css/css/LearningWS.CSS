@@ -1,0 +1,231 @@
+html {
+    background-color:#6433ff;"
+}
+
+body {
+    font-family: Georgia, "Times New Roman" sans-serif;
+    font-size: medium;
+}
+
+.container {
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFF;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+
+    }
+}
+
+header {
+    padding-top: 20px;
+    color:#08127b;
+}
+
+header h1 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 165%;
+}
+
+header p {
+    margin: 0;
+}
+
+/* Site Navigation */
+.site-nav {
+    margin-top: 20px;
+}
+.site-nav ul {
+    margin: 0;
+    padding: 0;
+}
+.site-nav li {
+    list-style: none;
+    float: left;
+    margin-right: 5px;
+}
+
+.site-nav a {
+    display: block;
+    color: #042b47;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 3px solid #63aadd;
+    border-bottom: none;
+}
+
+.site-nav a:hover {
+    background-color:#63aadd;
+}
+
+/* End Site Navigation */
+
+.content-area {
+    border-top: 3px solid #09ddc1;
+    border-bottom: 3px solid #09ddc1;
+    
+}
+
+.main-area {
+    width: 66%;
+    float: left;
+    
+    
+}
+/* Table style */
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.col-item-name {
+    width: 60%;
+}
+
+.col-quantity,
+.col-price {
+    width: 20%;
+}
+table th {
+    background-color: #006400;
+    color: rgb(226, 231, 216);
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, );
+}    
+
+table th,
+table td {
+    border: 1px solid #006400;
+    padding: 10px;
+}
+
+table tbody tr:nth-child(odd) td {
+    background-color: seagreen;
+}
+
+table tr :nth-child(2),
+table tr :nth-child(3) {
+    text-align: center;
+}
+
+/* Form Styles */
+form{
+    background-color: #ececec;
+    padding: 30px 40px;
+}
+
+.hidden-label {
+    position: absolute;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+input,
+select {
+    font-family: Tahoma, sans-serif;
+    font-size: 100%;
+}
+
+input[type="email"], 
+input[type="password"],
+input[type="text"],
+input[type="number"],
+input[type="tel"],
+select {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    padding: 0 10px;
+    height: 40px;
+    margin-bottom: 15px;
+    border: solid #CDCDCD;
+}
+
+input[type="email"]:focus, 
+input[type="password"]:focus,
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus {
+    border: 1px solid #869960;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, .13);
+}
+
+input[type="submit"] {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    background-color: #869960;
+    color: #fff;
+    padding: 10px 0;
+    border: 1px solid #798A56;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+    border: 1px solid #535E3B;
+    background-color: #798A56;
+}
+
+.check-text {
+    font-size: 85%;
+    color: #777;
+}
+
+.sidebar {
+    width: 34%;
+    float: left;
+    background-color: aqua;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    font-size: 85%;
+}
+
+@media screen and (max-width: 700px) {
+    .main-area,
+    .sidebar z{
+        width: auto;
+        float: none;
+    }
+}
+
+footer {
+    text-align: center;
+    font-size: 85%;
+    color: #084b7b;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.fix {
+    clear: both;
+}
+
+.group:before,
+.group:after {
+    content:"";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+.group {
+    zoom: 1;
+}
